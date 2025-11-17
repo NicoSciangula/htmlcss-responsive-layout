@@ -75,3 +75,16 @@ img {
 .bolder .no-bolder{
     font-weight: 400;
 }
+.social-icon{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1.5rem;
+}
+.social-icon li{
+    border-radius: 20px;
+    background-color: white;
+    padding: .5rem .8rem;
+    display: flex;
+    align-items: center;
+}
