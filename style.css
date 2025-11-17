@@ -46,7 +46,10 @@ img {
     color: #4e3969;
     padding-bottom: 1rem;
 }
-
+.col-recipe{
+    display: flex;
+    flex-direction: column;
+}
 .recipe {
     background-color: white;
     border-bottom-left-radius: 5px;
