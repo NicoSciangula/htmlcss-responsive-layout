@@ -9,7 +9,12 @@ main,
 footer {
   font-family: "Montserrat", sans-serif;
 }
-
+.container-flex {
+  display: flex;
+}
+.container-direction {
+  flex-direction: column;
+}
 .bg-light-grey {
   background-color: #f6f5f3;
 }
@@ -46,10 +51,7 @@ img {
   color: #4e3969;
   padding-bottom: 1rem;
 }
-.col-recipe {
-  display: flex;
-  flex-direction: column;
-}
+
 .recipe {
   background-color: white;
   border-bottom-left-radius: 5px;
@@ -75,7 +77,6 @@ img {
   font-weight: 400;
 }
 .social-icon {
-  display: flex;
   justify-content: space-between;
   list-style: none;
   padding: 1.5rem 0;
@@ -88,15 +89,12 @@ img {
   box-shadow: 0px 3px 6px 3px #e9e8e7;
   align-items: center;
 }
-.presentation {
-  display: flex;
-  flex-direction: column;
+
+.presentation h2 {
+  padding-bottom: 0.8rem;
 }
-.presentation h2{
-  /* border-bottom: 2px solid #f7972e; */
-  padding-bottom: .8rem;
-}
-hr{
+
+hr {
   height: 1.5px;
   width: 65px;
   border: 0;
@@ -108,7 +106,33 @@ hr{
   margin: 0 auto;
   padding: 1.2rem 0;
 }
-.presentation p{
+.presentation p {
   line-height: 1.8rem;
   padding-bottom: 1.5rem;
+}
+.bg-purple {
+  background-color: #7c69a4;
+}
+footer {
+  padding: 1.5rem;
+}
+.container-footer section {
+  text-align: center;
+  color: white;
+}
+.container-footer section p {
+  font-size: 0.7rem;
+  padding-bottom: 0.5rem;
+}
+.footer-bar {
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-bar li {
+  padding-right: 0.8rem;
+}
+.footer-bar li a {
+  color: white;
+  font-size: 0.7rem;
 }
