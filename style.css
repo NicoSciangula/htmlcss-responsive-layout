@@ -22,7 +22,7 @@ footer {
 .container-main-title {
   background-color: white;
 }
-
+/****** STRUTTURA HEADER ******/
 .main-title {
   color: #ff9614;
   font-family: "Nerko One", cursive;
@@ -51,21 +51,26 @@ img {
   color: #4e3969;
   padding-bottom: 1rem;
 }
+.hidden-title {
+  display: none;
+}
 
 .recipe {
   background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-shadow: 0px 3px 6px 3px #e9e8e7;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
 }
 
 .recipe h2 {
   padding-top: 0.8rem;
   padding-bottom: 1.5rem;
 }
-
-.recipe p {
+.recipe ul {
+  list-style: none;
+}
+.recipe li {
   padding-bottom: 1rem;
 }
 
@@ -76,6 +81,7 @@ img {
 .bolder .no-bolder {
   font-weight: 400;
 }
+/************ STRUTTURA ICONE **************/
 .social-icon {
   justify-content: space-between;
   list-style: none;
@@ -89,7 +95,12 @@ img {
   box-shadow: 0px 3px 6px 3px #e9e8e7;
   align-items: center;
 }
-
+/****** BANNER ******/
+.banner {
+  display: none;
+  padding-bottom: 0.8rem;
+}
+/*************** STRUTTURA MAIN *******************/
 .presentation h2 {
   padding-bottom: 0.8rem;
 }
@@ -108,8 +119,9 @@ hr {
 }
 .presentation p {
   line-height: 1.8rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
 }
+/*************** STRUTTURA FOOTER *****************/
 .bg-purple {
   background-color: #7c69a4;
 }
@@ -135,4 +147,37 @@ footer {
 .footer-bar li a {
   color: white;
   font-size: 0.7rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main-title {
+    text-align: start;
+  }
+  .hidden-title {
+    display: inline;
+  }
+  .marg-R-L {
+    margin: 0 2.5rem;
+  }
+  .banner {
+    display: block;
+  }
+  .social-icon li {
+    padding: 0.5rem 3.5rem;
+  }
+  .recipe ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .recipe ul li {
+    padding: 1rem 4.5rem 1rem 0;
+  }
+
+  .presentation img {
+    float: left;
+    padding: 1.2rem 0.5rem 0 0;
+  }
+  .presentation p {
+    padding-top: .8rem;
+  }
 }
