@@ -95,6 +95,10 @@ img {
   box-shadow: 0px 3px 6px 3px #e9e8e7;
   align-items: center;
 }
+.social-name {
+  padding-left: 0.2rem;
+  display: none;
+}
 /****** BANNER ******/
 .banner {
   display: none;
@@ -103,6 +107,7 @@ img {
 /*************** STRUTTURA MAIN *******************/
 .presentation h2 {
   padding-bottom: 0.8rem;
+  font-weight: 500;
 }
 
 hr {
@@ -156,8 +161,12 @@ footer {
   .hidden-title {
     display: inline;
   }
+  .container-block-header > h2 {
+    font-size: 2rem;
+  }
   .marg-R-L {
-    margin: 0 2.5rem;
+    margin: 0 auto;
+    max-width: 768px;
   }
   .banner {
     display: block;
@@ -178,6 +187,53 @@ footer {
     padding: 1.2rem 0.5rem 0 0;
   }
   .presentation p {
-    padding-top: .8rem;
+    padding-top: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .marg-R-L {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  .col-recipe img {
+    max-width: 700px;
+  }
+  .col-recipe {
+    flex-direction: row;
+  }
+  .recipe {
+    padding: 1.5rem 4rem 1.5rem 2rem;
+  }
+  .recipe ul li {
+    font-size: 0.8rem;
+    padding: 0 0 1rem 0;
+  }
+  .container-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .presentation p {
+    padding-bottom: 3.5rem;
+  }
+  .presentation h2 {
+    padding-top: 0.8rem;
+    font-size: 1.8rem;
+  }
+  .container-block-header > h2 {
+    font-size: 2.5rem;
+  }
+  .main-title {
+    font-size: 3.2rem;
+  }
+  .social-name {
+    display: inline;
+  }
+  .social-icon li {
+    padding: 0.5rem 2.5rem;
+  }
+  .container-footer section > p {
+    text-align: left;
   }
 }
